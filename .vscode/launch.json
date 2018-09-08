@@ -1,0 +1,75 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome",
+        "url": "http://localhost:9000",
+        "webRoot": "${workspaceRoot}/server/index.js"
+      },
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Attach by Process ID",
+        "port": 5858,
+        "restart": true
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "program": "${workspaceRoot}/server/index.js",
+        "skipFiles": ["app.js"],
+        "stopOnEntry": false
+      },
+      {
+        "type": "chrome",
+        "request": "attach",
+        "sourceMaps": false,
+        "name": "Attach to Chrome",
+        "port": 9000,
+        "webRoot": "${workspaceRoot}/server/index.js"
+      },
+      {
+        "name": "Launch",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/server/index.js",
+        "stopOnEntry": false,
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "preLaunchTask": null,
+        "runtimeExecutable": null,
+        "runtimeArgs": ["--nolazy"],
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "console": "internalConsole",
+        "sourceMaps": true,
+        "outFiles": []
+      },
+      {
+        "name": "Attach",
+        "type": "node",
+        "request": "attach",
+        "port": 9000,
+        "address": "localhost",
+        "restart": false,
+        "sourceMaps": false,
+        "outFiles": [],
+        "localRoot": "${workspaceRoot}/server/index.js",
+        "remoteRoot": null
+      },
+      {
+        "name": "Attach to Process",
+        "type": "node",
+        "request": "attach",
+        "processId": "${command.PickProcess}",
+        "port": 9000,
+        "sourceMaps": false,
+        "outFiles": []
+      }
+    ]
+  }
+  

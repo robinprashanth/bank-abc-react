@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "es2015",
+    "stage-1",
+    "react",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "start": {
+      "presets": [
+        "react-hmre"
+      ]
+    },
+    "test": {
+      "presets": ["es2015", "react"]
+    }
+  },
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-object-rest-spread",
+    "transform-regenerator",
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ]
+}

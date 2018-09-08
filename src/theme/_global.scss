@@ -1,0 +1,97 @@
+@import './variables.scss';
+$primary-color: #333;
+$secondary-color: #666;
+$main-title-color: #0070BF;
+$validation-error-color: #CC0000;
+$black:    #000 !default;
+$white:    #fff !default;
+$gray-900: #212529 !default;
+$body-bg:                   #e4e5e6 !default;
+$body-color:                $gray-900 !default;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba($black, 0);
+}
+
+// stylelint-disable selector-list-comma-newline-after
+// Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+// stylelint-enable selector-list-comma-newline-after
+
+// Body
+//
+// 1. Remove the margin in all browsers.
+// 2. As a best practice, apply a default `background-color`.
+// 3. Set an explicit initial text-align value so that we can later use the
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+  margin: 0;
+  color: $body-color;
+  text-align: left;
+  background-color: $body-bg;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+	.d-md-down-none {
+	  display: none !important;
+	}
+}
+
+.app-body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow-x: hidden;
+  margin-top: 20px;
+  
+  .main {
+    flex: 1;
+    min-width: 0;
+  }
+}
+  
+.animated {
+	animation-duration: 1s; }
+  
+.animated.infinite {
+	animation-iteration-count: infinite; }
+  
+.animated.hinge {
+	animation-duration: 2s; }
+  
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+  
+.help-block {
+  color: $validation-error-color;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
