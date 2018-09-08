@@ -1,6 +1,6 @@
 # ABC Bank React App
 
-ABC Bank React App is a web application that allows an user to create account, deposit money and withdrawal money.User can see the transactions summary of debis and credits.Ui is responsive and can be viewed on moible devices.
+ABC Bank React App is a web application that allows user to create account, deposit money and withdrawal money.User can see the transactions summary of debits and credits.UI is responsive and can be viewed on moible devices.
 
 React app is developed without any boilerplate or create-react-app starter code. The current app uses latest react, redux, express and bootstap versions.
 
