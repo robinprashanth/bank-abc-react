@@ -89,7 +89,7 @@ class Dashboard extends React.Component {
           type: 'cr',
           amount: value,
           date: new Date(),
-          description: 'deposited Amount'
+          description: 'Deposited Amount'
         };
         dispatch(submitTransation(transaction, user.id));
       }
@@ -107,7 +107,7 @@ class Dashboard extends React.Component {
           type: 'dr',
           amount: value,
           date: new Date(),
-          description: 'withdraw Amount'
+          description: 'Withdraw Amount'
         };
         dispatch(submitTransation(transaction, user.id));
         dispatch(clear());
