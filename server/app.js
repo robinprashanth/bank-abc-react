@@ -19,9 +19,9 @@ let transId = 1;
 // Seed first user
 const firstUser = {
   id: autoId,
-  firstName: 'robin',
-  lastName: 'prashanth',
-  email: 'robin@gmail.com',
+  firstName: 'test',
+  lastName: 'user',
+  email: 'test@gmail.com',
   password: 'test',
   transactions: []
 };

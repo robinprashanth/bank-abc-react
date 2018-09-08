@@ -51,7 +51,7 @@ class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub Link</NavLink>
+                <NavLink href="https://github.com/robinprashanth/bank-abc-react">GitHub Link</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="">{`Welcome ${user.firstName}  ${user.lastName}`}</NavLink>
