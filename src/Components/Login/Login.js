@@ -142,7 +142,7 @@ class Login extends Component {
                   <CardBody className="text-center">
                     <div>
                       <h2>Sign up</h2>
-                      <p>Open a Saving Account with us and enjoy unlimited transactions with any fee.
+                      <p>Open a Saving Account with us and enjoy unlimited transactions without any fee.
                       </p>
                       <Button
                         color="primary"
